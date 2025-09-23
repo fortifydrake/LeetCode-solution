@@ -1,33 +1,39 @@
 public class palindromic_substring {
     public static void main(String[] args){
-        String s="c";
-        int n=s.length();
-        int i=0;
-        if(n%2!=0){
-            int m=n/2;
-            while(i<=m){
-                if(s.charAt(m-i)==s.charAt(m+i)){
-                    i++;
-                }
-                else{
-                    break;
-                }
-            }
-            String palindrome=s.substring(m-i+1,m+i);
-            System.out.println(palindrome);
+        String s = "cbbd";
+        String maxStr=new String();
+        if (s.length() <= 1) {
+            maxStr = s;
         }
-        else{
-            int m=n/2;
-            while(i<m){
-                if(s.charAt(m-i-1)==s.charAt(m+i)){
-                    i++;
-                }
-                else{
-                    break;
-                }
+
+        int maxLen = 1;
+        maxStr = s.substring(0, 1);
+
+        s = "#" + s.replaceAll("", "#") + "#";
+        int[] dp = new int[s.length()];
+        int center = 0;
+        int right = 0;
+
+        for (int i = 0; i < s.length(); i++) {
+            if (i < right) {
+                dp[i] = Math.min(right - i, dp[2 * center - i]);
             }
-            String palindrome=s.substring(m-i,m+i);
-            System.out.println(palindrome);
+
+            while (i - dp[i] - 1 >= 0 && i + dp[i] + 1 < s.length() && s.charAt(i - dp[i] - 1) == s.charAt(i + dp[i] + 1)) {
+                dp[i]++;
+            }
+
+            if (i + dp[i] > right) {
+                center = i;
+                right = i + dp[i];
+            }
+
+            if (dp[i] > maxLen) {
+                maxLen = dp[i];
+                maxStr = s.substring(i - dp[i], i + dp[i] + 1).replaceAll("#", "");
+            }
         }
+
+        System.out.println("longest substring found is :"+maxStr);
     }
 }
