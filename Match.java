@@ -1,8 +1,8 @@
 class Solution {
     public boolean isMatch(String s, String p) {
+        if(p.isEmpty())return s.isEmpty();
         int i=0,j=0,n=s.length(),m=p.length();
         char prev=p.charAt(i);
-        if(p.isEmpty())return s.isEmpty();
         while(j+1<m&&p.charAt(j+1)=='*'){
             if(p.charAt(j)==s.charAt(i))i++;
             else j+=2;
@@ -19,7 +19,6 @@ public class Match{
         Solution sol=new Solution();
         String s="aab";
         String p="c*a*b";//true
-
         System.out.println(sol.isMatch(s,p));
     }
 }

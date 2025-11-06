@@ -1,0 +1,102 @@
+Ahh got it 👍 You meant **Data Structures**, not Data Science.
+Here’s a **progressive list of Data Structures topics (Easy → Hard)**:
+
+---
+
+## **📚 Data Structures Roadmap (Easy → Hard)**
+
+### **1. Basics (Fundamentals)**
+
+* Introduction to Data Structures (arrays, linked lists, trees, graphs)
+* Memory management (stack vs heap)
+* Complexity analysis: **Big-O, Big-Theta, Big-Omega**
+* Recursion basics
+
+---
+
+### **2. Linear Data Structures (Easy Level)**
+
+* **Arrays**
+
+  * Basics, operations (insertion, deletion, traversal)
+  * Multi-dimensional arrays
+* **Strings**
+
+  * Basic operations (reverse, substring, palindrome)
+  * Pattern matching (Naïve, KMP, Rabin-Karp)
+* **Linked Lists**
+
+  * Singly, Doubly, Circular
+  * Operations: insert, delete, reverse, detect cycle
+* **Stacks**
+
+  * Array/Linked list implementation
+  * Applications: expression evaluation, parentheses matching
+* **Queues**
+
+  * Simple Queue
+  * Circular Queue
+  * Deque (Double-ended queue)
+  * Priority Queue
+
+---
+
+### **3. Non-Linear Data Structures (Intermediate Level)**
+
+* **Trees**
+
+  * Binary Tree (traversals: inorder, preorder, postorder, level-order)
+  * Binary Search Tree (BST)
+  * Heap (Min-Heap, Max-Heap, Heapify, Heap Sort)
+  * AVL Tree (rotations, balancing)
+  * B-Tree, B+ Tree (used in databases)
+* **Graphs**
+
+  * Representation: adjacency matrix, adjacency list
+  * Traversals: BFS, DFS
+  * Minimum Spanning Tree (Prim’s, Kruskal’s)
+  * Shortest Path (Dijkstra, Bellman-Ford, Floyd-Warshall, A\*)
+
+---
+
+### **4. Advanced Data Structures (Hard Level)**
+
+* **Hashing**
+
+  * Hash functions, collision handling (chaining, open addressing)
+  * Applications: hash maps, sets
+* **Tries (Prefix Trees)**
+
+  * Insert/search/delete words
+  * Autocomplete implementation
+* **Segment Tree & Fenwick Tree (Binary Indexed Tree)**
+
+  * Range sum queries
+  * Range minimum queries
+* **Disjoint Set (Union-Find)**
+
+  * Path compression
+  * Union by rank
+* **Graph Algorithms (Advanced)**
+
+  * Topological Sort
+  * Strongly Connected Components (Kosaraju, Tarjan)
+  * Network Flow (Ford-Fulkerson, Edmonds-Karp)
+
+---
+
+### **5. Expert / Specialized (Hardest Level)**
+
+* Suffix Trees & Suffix Arrays (string matching, bioinformatics)
+* KMP Automaton & Aho-Corasick Algorithm
+* Red-Black Trees, Splay Trees, Treaps
+* Skip Lists
+* K-D Trees (for nearest neighbor search in ML/geometry)
+* Bloom Filters (probabilistic data structure)
+* LSM Trees (used in databases like Cassandra, LevelDB)
+
+---
+
+✅ This goes from **Arrays → Advanced Trees/Graphs → Specialized Structures** in increasing difficulty.
+
+Would you like me to **make this into a dark-theme roadmap flowchart (like the previous ones)** so you can **visualize the learning path**?

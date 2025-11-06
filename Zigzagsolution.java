@@ -10,7 +10,7 @@ class Zigzagsolution2 {
         if(r==1) return s;
         if(r>=len) return s;
         int circle=2*numRows-2;
-        int n=s.length();
+        //int n=s.length();
         //System.out.println("circle :"+circle+"\nno. of rounds :"+((n/r)));
         for (int i = 0; i < numRows; i++) {
             for (int j = i; j < s.length(); j += circle) {
