@@ -1,2 +1,2 @@
 ### Leetcode Solution
-this repository consists of leetcode solutions
+This repository consists of leetcode solutions
