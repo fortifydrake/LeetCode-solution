@@ -1,2 +1,2 @@
 ### Leetcode Solution
-this playlist consist of leetcode solutions
+this repository consists of leetcode solutions
